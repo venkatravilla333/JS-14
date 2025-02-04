@@ -49,14 +49,14 @@
 // var names = [ {
 //   name: 'sachin',
 //   age: 40,
-//   city: 'mumbai', 
+//   city: 'mumbai',
 //   play: function () {
 //     console.log('play')
 //   }
 // }, {
 //   name: 'kohli',
 //   age: 30,
-//   city: 'delhi', 
+//   city: 'delhi',
 //   play: function () {
 //     console.log('play')
 //   }
@@ -64,7 +64,7 @@
 //   {
 //   name: 'dhoni',
 //   age: 35,
-//   city: 'ranchi', 
+//   city: 'ranchi',
 //   play: function () {
 //     console.log('play')
 //   }
@@ -77,5 +77,30 @@
 // console.log(names[1])
 // console.log(names[2])
 // console.log(names[3])
+
+var obj = {
+  name: 'sachin',
+  age: 40
+}
+console.log(obj, typeof obj)
+
+var arr = []
+console.log(arr, typeof arr)
+
+var a = 10
+var b = () => {
+  var c = 200
+}
+b()
+console.log(b , typeof b)
+
+function test() {
+  var a = 100
+  console.log('declare')
+}
+test()
+console.log(test, typeof test)
+
+
 
 
