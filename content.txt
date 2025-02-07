@@ -229,3 +229,144 @@ We use arithmatic operators to perform some mathematical operations.
      When used, it converts a true value to false and vice versa.
    
      ! is the logical NOT operator, used for negating boolean values.
+
+
+
+     6) Control statements
+=====================
+
+We use control statements to develop some logic or functionality when we have multiple conditions.
+
+1) if else
+----------
+
+ - In JavaScript, the if...else statement is used for conditional execution of code. It allows you to perform different actions based on a specific condition.
+ 
+   The syntax of the if...else statement is as follows:
+
+  if (condition) {
+   // Code block to be executed if the condition is true
+   } else {
+   // Code block to be executed if the condition is false
+   }
+
+ const num = 10;
+
+ if (num > 0) {
+  console.log("Positive");
+ } else if (num < 0) {
+  console.log("Negative");
+ } else {
+  console.log("Zero");
+ }
+
+
+
+2) switch case (It does not work for step value)
+--------------
+
+ - In JavaScript, the switch statement is another way to perform conditional excution of code based on the value of an expression. It is often used as an alternative to multiple if...else statements.
+
+ - The switch statement evaluates an expression once and then matches the value of the  expression to a case label. If a matching case label is found, the corresponding block of code is executed.
+
+   switch (expression) {
+     case value1:
+     // Code to be executed if the expression matches value1
+     break;
+     case value2:
+     // Code to be executed if the expression matches value2
+     break;
+     // Add more cases as needed
+     default:
+     // Code to be executed if none of the cases match the expression
+     break;
+    }
+
+  Ex:
+
+  const dayOfWeek = 3;
+
+  switch (dayOfWeek) {
+   case 1:
+    console.log("Monday");
+    break;
+   case 2:
+    console.log("Tuesday");
+    break;
+   case 3:
+    console.log("Wednesday");
+    break;
+   case 4:
+    console.log("Thursday");
+    break;
+   case 5:
+    console.log("Friday");
+    break;
+   case 6:
+    console.log("Saturday");
+    break;
+   case 7:
+    console.log("Sunday");
+    break;
+   default:
+    console.log("Invalid day");
+  }
+
+
+
+
+7) Loops
+========
+
+ - We use loops to do same task agin and again simply. 
+ - We use loops to access memory value multiple times in an application. 
+
+
+Conditinal Loops
+----------------
+
+1) for loop:
+   -------- 
+
+In JavaScript, a for loop is used to execute a block of code repeatedly for a specified number of times.
+
+2) while loop:
+   ----------
+ 
+In JavaScript, a while loop is used to execute a block of code repeatedly as long as a specified condition is true. The loop continues until the condition evaluates to false.
+
+3) do while loop:
+   ------------- 
+
+In JavaScript, a do-while loop is similar to a while loop, but with a slight difference. The primary difference is that in a do-while loop, the loop body is executed at least once before the loop condition is checked. 
+This ensures that the loop body is executed at least once, regardless of whether the condition is initially true or false. The do-while
+
+4) infinity loop:
+   -------------
+
+An infinite loop in JavaScript is a loop that runs infinitely, continuously executing the same code block without ever stopping. This usually happens when the loop condition always evaluates to true
+
+**break=> by using Break keyword we can break the loop and make exit the loop.
+
+**continue=> by using continue keyword we can make jump the loop.
+
+
+Non conditional loops
+---------------------
+
+5) for in loop:
+   -----------
+ 
+We use this loop to iterate keys in object.
+In JavaScript, the for...in loop is used to iterate over the enumerable properties of an object. It allows you to loop through the keys (property names) of an object and access their corresponding values.
+
+6) for of loop:
+   -----------
+
+In JavaScript, the for...of loop is used to iterate over the values of iterable objects(array/string object/set/map/arguments object/generator object/)..  It provides an easy and concise way to loop through arrays, strings, sets, maps, and other objects that are iterable. 
+
+Note:
+---- 
+
+- It's important to note that the for...in loop should be used for iterating over object properties. If you want to loop through elements of an array, it is recommended to use the for...of loop or a simple for loop with an index.
+- keep in mind that the for...of loop is not suitable for iterating over regular objects   (objects created with {}) since they are not iterable by default. For iterating through object properties, you should use the for...in loop. 
