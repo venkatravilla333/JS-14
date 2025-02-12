@@ -248,5 +248,94 @@
 // console.log(a)
 
 
+//var vs let vs const
+
+//scope
+
+//hoisting
+
+//redeclaration
+
+// var a = 10
+// let a = 10
+// const a = 10
+
+// console.log(a)
+// console.log(a)
+// console.log(a)
+
+// // var a = 100
+// let a = 100
+// console.log(a)
+// console.log(a)
+// console.log(a)
+
+//re-assignment
+
+// var a = 10
+// let a = 10
+// const a = 10
+
+// console.log(a)
+
+// a = 100
+// console.log(a)
+
+//initization
+
+// var x
+// let y
+// const z = 10
+
+//closure
+
+
+
+// function outer() {
+//   var x = 100
+//  return function inner() {
+//     console.log(x)
+//   }
+// }
+// var inner = outer()
+
+// inner()
+
+
+//pure vs impure
+
+// function pure(a, b, c) {
+//   let res = a + b + c
+//   console.log(res)
+  
+// }
+// pure(1, 2, 3)
+
+// function impure(a, b, c) {
+
+//   let d = Math.random()*10
+//   let res = a + b + c + d
+//   console.log(res)
+  
+// }
+// impure(1,2,3)
+
+
+// Recursion function
+
+function factorial(n) {
+  if (n <= 0) {
+    return 1;
+  } else {
+    return n * factorial(n - 1);
+  }
+}
+
+let result = factorial(5);
+console.log(result);
+
+
+
+
 
 
