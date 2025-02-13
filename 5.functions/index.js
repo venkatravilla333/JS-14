@@ -323,19 +323,99 @@
 
 // Recursion function
 
-function factorial(n) {
-  if (n <= 0) {
-    return 1;
-  } else {
-    return n * factorial(n - 1);
-  }
-}
+// function factorial(n) {
+//   if (n <= 0) {
+//     return 1;
+//   } else {
+//     return n * factorial(n - 1);
+//   }
+// }
 
-let result = factorial(5);
-console.log(result);
+// let result = factorial(5);
+// console.log(result);
+
+//first class function
+
+// var x = function (test) {
+//   return  function inner(){
+    
+//     }
+// }
+// x(function test(){})
+
+//HOF
+
+// function test(greet) {
+//   console.log('test')
+//   greet()
+//   return function inner() {
+//     console.log('inner')
+//   }
+// }
+// test(function greet() {
+//   console.log('greet')
+// })
 
 
+// var a = 10
 
+// (function () {
+//   var a = 10
+//   var b = () => { }
+  
+// })()
+// console.log(a)
+
+
+//without curry
+
+// function sum(a, b, c) {
+//   console.log(a+b+c)
+  
+// }
+// sum(1,2,3)
+
+//with curry
+
+// function fun1(a) {
+//   return function fun2(b) {
+//     return function fun3(c) {
+//       console.log(a + b + c)
+      
+//     }
+//   }
+// }
+
+// fun1(1)(2)(3)
+
+//without curry
+
+// function calDis(price, dis) {
+//   var disAmout = price * dis
+//   console.log(disAmout)
+// }
+
+// calDis(1000, .1)
+// calDis(1000, .2)
+// calDis(1000, .3)
+// calDis(1000, .4)
+// calDis(1000, .5)
+
+// //with curry
+
+// function calPrice(price) {
+//   return function calDis(dis) {
+//     var disAmout = price * dis
+//     console.log(disAmout)
+//   }
+// }
+
+// let calDis = calPrice(1000)
+// calDis(.1)
+// calDis(.2)
+// calDis(.3)
+// calDis(.4)
+// calDis(.5)
 
 
 
