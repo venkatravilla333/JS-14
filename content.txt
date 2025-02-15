@@ -644,7 +644,6 @@ let result = factorial(5);
 console.log(result);
 
 
-
 9) Objects
 ==========
 
