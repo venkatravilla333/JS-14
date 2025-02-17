@@ -2,6 +2,8 @@
 
 //How to create an object
 
+// const { replace } = require("lodash")
+
 //object literal way
 
 // var person1 = {
@@ -233,10 +235,105 @@
 
 //ES-5 before template string
 
-var name = 'sachin'
-var age = 40
+// var name = 'sachin'
+// var age = 40
 
-console.log('Hi this is' + ' ' + name + ' ' + 'my age is' + ' ' + age)
+// console.log('Hi this is' + ' ' + name + ' ' + 'my age is' + ' ' + age)
 
-//ES-6 after template string
-console.log(`Hi this is ${name} my age is ${age}`)
+// //ES-6 after template string
+// console.log(`Hi this is ${name} my age is ${age}`)
+
+
+var msg = 'Hi how are you'
+
+console.log(msg)
+
+// //how to find string length
+// console.log(msg.length)
+
+//how to remove empty spaces in string
+
+// starting
+
+// console.log(msg.trimStart().length)
+// // ending
+// console.log(msg.trimEnd().length)
+// // both
+// console.log(msg.trim().length)
+
+// how to create copy
+
+// let strCopy = msg.slice()
+// let strCopy = msg.slice(0)
+// let strCopy = msg.slice(0, 4)
+// let strCopy = msg.slice(-3)
+// console.log(strCopy)
+
+// let strCopy = msg.substring()
+// let strCopy = msg.substring(0)
+// let strCopy = msg.substring(0, 4)
+// let strCopy = msg.substring(-3)
+
+// console.log(strCopy)
+
+//how to extract or copy a string character
+
+// console.log(msg.charAt(0))
+
+// console.log(msg.charCodeAt(0))
+
+//case conversion
+
+// console.log(msg.toUpperCase())
+// console.log(msg.toLowerCase())
+
+//How to convert string into array
+// console.log(typeof msg)
+
+// let arr = msg.split()
+// console.log(typeof arr)
+
+// let mystr = arr.join()
+// console.log(mystr, typeof mystr)
+// console.log(msg.split())
+// console.log(msg.split(''))
+// console.log(msg.split(' '))
+
+// how to add new string to axisting string
+
+// console.log(msg.concat(' sachin'))
+
+//how to replace existing string
+
+// console.log(msg.replace('you', 'me'))
+
+//string padding
+
+// var x = 'Hi'
+
+// console.log(x.padStart(6, 300))
+// console.log(x.padEnd(6, 300))
+
+//How to find specific string
+
+// console.log(msg.startsWith('Hi'))
+// console.log(msg.startsWith('Bye'))
+// console.log(msg.endsWith('you'))
+// console.log(msg.endsWith('me'))
+// console.log(msg.indexOf('Hi'))
+// console.log(msg.indexOf('sachin'))
+// console.log(msg.lastIndexOf('Hi'))
+// console.log(msg.lastIndexOf('sachin'))
+// console.log(msg.includes('you'))
+// console.log(msg.includes('me'))
+
+// console.log(msg.repeat(4))
+
+
+
+
+
+
+
+
+

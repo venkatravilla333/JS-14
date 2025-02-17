@@ -777,7 +777,116 @@ String Templates
 => Template Literals use back-ticks (``) rather than the quotes ("") to define a string.
 => Template literals allows multiline strings.
 
-   
+
  syntax:   `${}`
+
+
+ 10) String Object
+-----------------
+
+
+1) String length ===> It gives string length.
+
+
+2) Removes white spaces
+
+   =>trim()      ===> It removes white space both sides.
+   =>trimStart() ===> It removes white space at starting
+   =>trimEnd()   ===> It removes white space at ending
+
+
+3) Extracting part of string
+
+   => slice(startindex, endindex)
+   => substring(startindex, endindex)
+
+    slice()
+    -------
+
+    -The slice() method extracts a part of a string.
+
+    -The start and end parameters specifies the part of the string to extract.
+
+    -A negative number selects from the end of the string. 
+
+
+    subString()
+    ----------
+
+    -The substring() method extracts characters from start to end (exclusive).
+
+    -Start or end values less than 0, are treated as 0. It does not work for negative values.
+
+
+4) Extracting string characters.
+
+   => charAt(index) - It returns the character at specified index.
+
+   => charCodeAt(index) - It returns unicode of character at specified index.
+
+
+5) Replacing string content
+
+  => replace(exitingstring, newstring).
+  => by default replace method replaces only first match.
+  => replace method is case sensitive.
+
+   
+6) Converting to upper and lower case
+
+  => toUpperCase  ==> It converts string to UPPERCASE.
+  => toLowerCase  ==> It converts string to lowercase.
+
+
+7) To Join two or more strings.
+   
+  => we use concat() method.
+  => It is used to concat two or more strings.
+  => concat method is used instead of plus operator.
+
+
+8) String padding
+
+   =>padStart(target_length, pad_string)
+   
+   =>padEnd(target_length, pad_string)
+
+   =>target_length - The desired length of the resulting string after it has been padded.
+
+
+9) Converting string into array.
+
+   =>split('')
+
+   -The split() method splits a string into an array of substrings.
+
+   -The split() method returns the new array.
+
+   -The split() method does not change the original string.
+
+   -If (" ") is used as separator, the string is split between words.
+
+
+10) Methods for finding specific string.
+
+   =>indexOf()     ==> It gives first occurance index number. if not return -1
+   =>lastIndexOf() ==> It gives last occurance index number.if not return -1
+   =>includes()    ==> It gives true if string has that specific string.
+   =>startsWith()  ==> It gives true if it has started with same string as you asked.
+   =>endsWith()    ==> It gives true if it has ended with same string as you asked.
+
+11) repeat
+
+let text = "Hello world!";
+let result = text.repeat(2);
+
+repeat() is an ECMAScript6 (ES6) feature.
+
+The repeat() method returns a string with a number of copies of a string.
+
+The repeat() method returns a new string.
+
+The repeat() method does not change the original string.
+
 
 
