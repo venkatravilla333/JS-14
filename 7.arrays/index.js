@@ -295,6 +295,58 @@ var arr = [1, 2, 3, 4, 5]
 // })
 // console.log(forEachRes)
 
+//Sorting
+
+//Primitives
+
+// var arr = [1, 5, 8, 2, 4]
+// var arr = [1, 5, 8, 20, 4]
+// var arr = ['sachin', 'dhoni', 'kohli']
+
+// var asOrder = arr.sort()
+// var asOrder = arr.sort((a,b) => {
+//   if (a > b) {
+//       return 1
+//   }
+//   if (a < b) {
+//     return -1
+//   }
+// })
+// var dsOrder = asOrder.reverse()
+
+// console.log(asOrder)
+// console.log(dsOrder)
+
+// var asOrder = arr.sort()
+// var dsOrder = asOrder.reverse()
+
+// console.log(asOrder)
+// console.log(dsOrder)
+
+// var arr = [{ course: 'node js' }, { course: 'css' }, { course: 'react js' }]
+
+// var asOder = arr.sort((a, b) => {
+//   if (a.course > b.course) {
+//     return -1
+//   }
+//   if (a.course < b.course) {
+//     return 1
+//   }
+// })
+
+// console.log(asOder)
+
+// for (var i = 0; i < arr.length; i++){
+//   for (var j = i + 1; j < arr.length; j++){
+//     if (arr[i].course < arr[j].course) {
+//       var temp = arr[i]
+//       arr[i] = arr[j]
+//       arr[j] = temp
+//     }
+//   }
+// }
+// console.log(arr)
+
 
 
 
