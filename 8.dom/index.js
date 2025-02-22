@@ -1,7 +1,7 @@
 //how to examine dom
 
 // console.log(document)
-console.dir(document)
+// console.dir(document)
 
 //How to read dom properties
 
@@ -91,3 +91,97 @@ console.dir(document)
 // allChild[2].style.fontSize = "25px"
 
 
+
+//DOM MANIPULATION
+
+//add
+
+// var para = document.createElement('p')
+// para.id = 'mypara'
+// para.className = 'myclass'
+
+// var data ='This is para'
+
+// para.innerText = data
+
+// var text = document.createTextNode('This is para')
+// para.appendChild(text)
+
+// console.log(para)
+
+// var parent = document.getElementById('parent')
+// console.log(parent)
+
+// parent.appendChild(para)
+
+// var h3 = document.createElement('h3')
+// h3.className = 'h3class'
+// h3.textContent = 'This is heading 3'
+// console.log(h3)
+
+
+// parent.appendChild(h3)
+// parent.insertBefore(h3, para)
+
+//update or replace
+
+// var h1 = document.createElement('h1')
+// h1.className = 'h1class'
+
+// h1.innerText = 'This is heading 1'
+
+// console.log(h1)
+
+// parent.replaceChild(h1, h3)
+
+
+//delete
+
+// parent.removeChild(h1)
+
+//How to add events to DOM elements
+
+// var addButton = document.createElement('button')
+// addButton.className = 'btnclass'
+
+// addButton.innerText = 'Click to Add'
+
+// parent.appendChild(addButton)
+
+// var AddbtnFun = ()=>{
+//    parent.appendChild(para)
+// }
+
+// addButton.addEventListener('click', AddbtnFun)
+
+//replace
+
+// var replaceButton = document.createElement('button')
+// replaceButton.className = 'btnclass'
+
+// replaceButton.innerText = 'Click to Replace'
+
+// parent.appendChild(replaceButton)
+
+// var ReplacebtnFun = ()=>{
+//    parent.replaceChild(h1, para)
+// }
+
+// replaceButton.addEventListener('click', ReplacebtnFun)
+
+
+// //delete
+// var deleteButton = document.createElement('button')
+// deleteButton.className = 'btnclass'
+
+// deleteButton.innerText = 'Click to Delete'
+
+// parent.appendChild(deleteButton)
+
+// var DeletebtnFun = ()=>{
+//    parent.removeChild(h1)
+// }
+
+// deleteButton.addEventListener('click',  DeletebtnFun)
+
+//How to handle events in js
