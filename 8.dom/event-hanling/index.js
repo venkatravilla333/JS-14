@@ -1,25 +1,25 @@
 
 
-var parent = document.getElementById('parent')
-var child = document.getElementById('child')
-var subchild = document.getElementById('subchild')
+// var parent = document.getElementById('parent')
+// var child = document.getElementById('child')
+// var subchild = document.getElementById('subchild')
 
 
-var parentFun = (e) => {
-  console.log(e)
-  console.log('parent')
-}
+// var parentFun = (e) => {
+//   console.log(e)
+//   console.log('parent')
+// }
 
-parent.addEventListener('click', parentFun,)
+// parent.addEventListener('click', parentFun,)
 
-var childFun = (e) => {
-  console.log(e.target)
-  console.log('child')
-}
+// var childFun = (e) => {
+//   console.log(e.target)
+//   console.log('child')
+// }
 
-child.addEventListener('click', childFun)
+// child.addEventListener('click', childFun)
 
-var subChildFun = (e) => {
+// var subChildFun = (e) => {
   // e.stopPropagation()
   //  console.log(e)
   //  console.log(e.target)
@@ -28,6 +28,20 @@ var subChildFun = (e) => {
   //  console.log(e.clientY)
   //  console.log(e.offsetY)
   // console.log('sub child')
+// }
+
+// subchild.addEventListener('click', subChildFun)
+
+//event delegation
+
+var table = document.getElementById('table')
+console.log(table)
+
+
+var tableClick = (e) => {
+  console.log('clicked')
+  console.log(e)
+  console.log(e.target)
 }
 
-subchild.addEventListener('click', subChildFun)
+table.addEventListener('click', tableClick)
