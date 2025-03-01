@@ -1589,4 +1589,44 @@ fetch('https://jsonplaceholder.typicode.com/posts', {
 });
 
 
+22) Web storage (HTML-5)
+    ====================
+
+    1) local storage
+
+     - The localStorage object allows you to save/store data in key/value pairs in the browser.
+
+     - The localStorage object stores data with no expiration date. 
+
+     - The data is not deleted when the browser is closed, and are available for future sessions.
+
+     - The storage capacity of local storage is upto 10MB.
+
+  => Save Data to Local Storage
+
+     localStorage.setItem(key, value);
+
+  => Read Data from Local Storage
+
+     localStorage.getItem(key);
+
+  => Remove Data from Local Storage
+
+     localStorage.removeItem(key);
+
+  => Remove All (Clear Local Storage)
+
+     localStorage.clear();
+.
+
+    2) session storage
+
+     - The sessionStorage Object which stores data for one session.
+
+     - The data is deleted when the browser window is closed.
+    
+     - The storage capacity of session storage is 5MB
+
+
+
 
