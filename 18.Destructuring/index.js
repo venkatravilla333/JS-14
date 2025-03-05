@@ -43,11 +43,11 @@ var arr = [1, 2, 3, 4, 5]
 
 
 
-var person = {
-  name: 'sachin',
-  age: 40,
-  properties: [{bats: 10, cash: 1000000}, {childs: ['sara', 'arjun']}]
-}
+// var person = {
+//   name: 'sachin',
+//   age: 40,
+//   properties: [{bats: 10, cash: 1000000}, {childs: ['sara', 'arjun']}]
+// }
 
 // without using destructuing
 
@@ -60,14 +60,14 @@ var person = {
 
 // without using destructuing
 
-var {name, age, properties:[{bats, cash}, {childs: [c1, c2]}]} = person
+// var {name, age, properties:[{bats, cash}, {childs: [c1, c2]}]} = person
 
-console.log(name)
-console.log(age)
-console.log(bats)
-console.log(cash)
-console.log(c1)
-console.log(c2)
+// console.log(name)
+// console.log(age)
+// console.log(bats)
+// console.log(cash)
+// console.log(c1)
+// console.log(c2)
 
 
 
